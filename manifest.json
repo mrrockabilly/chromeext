@@ -1,11 +1,35 @@
 { 
 	"manifest_version": 2, 
-"name": "kittenbook", 
-"description": "Replace photos on Facebook with kittens", 
-"version": "0.0.1" , 
-"content_scripts":[
-	{
-		"matches": ["*://www.facebook.com/*"],
-		"js":["js/values.js", "js/prompt.js"]
-	}
+	"name": "Live/Work", 
+	"description": "Keep you productive...or not", 
+	"version": "0.0.1" ,
+	"background" : {
+		"scripts" : ["js/jquery-3.1.0.min.js"]
+		}, 
+	"content_scripts":[
+		{
+			"matches": ["*://www.facebook.com/*"], 
+			"js":["js/jquery-3.1.0.min.js", "js/values.js", "js/prompt.js", "js/home.js"]
+		},
+		{
+			"matches": ["*://twitter.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+		},
+		{
+			"matches": ["*://instagram.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+		},
+		{
+			"matches": ["*://stackoverflow.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+		},
+		{
+			"matches": ["*://api.jquery.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+		},
+		{
+			"matches": ["*://developer.mozilla.org/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+		}
+
 ]}

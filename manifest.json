@@ -9,27 +9,27 @@
 	"content_scripts":[
 		{
 			"matches": ["*://www.facebook.com/*"], 
-			"js":["js/jquery-3.1.0.min.js", "js/values.js", "js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js", "js/values.js", "js/prompt.js", "js/work.js"]
 		},
 		{
 			"matches": ["*://twitter.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
 		},
 		{
 			"matches": ["*://instagram.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
 		},
 		{
 			"matches": ["*://stackoverflow.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
 		},
 		{
 			"matches": ["*://api.jquery.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
 		},
 		{
 			"matches": ["*://developer.mozilla.org/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js","js/work.js", "js/prompt.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/home.js"]
 		}
 
 ]}

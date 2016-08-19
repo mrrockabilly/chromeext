@@ -9,35 +9,39 @@
 	"content_scripts":[
 		{
 			"matches": ["*://www.facebook.com/*"], 
-			"js":["js/jquery-3.1.0.min.js", "js/values.js", "js/prompt.js", "js/work.js"]
+			"js":["js/jquery-3.1.0.min.js", "js/values.js", "js/prompt.js", "js/social.js"]
 		},
 		{
 			"matches": ["*://twitter.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/social.js"]
 		},
 		{
 			"matches": ["*://www.instagram.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/social.js"]
 		},
 		{
 			"matches": ["*://www.tumblr.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/social.js"]
 		},
 		{
 			"matches": ["*://stackoverflow.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/workrelated.js"]
+		},
+		{
+			"matches": ["*://www.stackoverflow.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/workrelated.js"]
 		},
 		{
 			"matches": ["*://api.jquery.com/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/workrelated.js"]
 		},
 		{
 			"matches": ["*://developer.mozilla.org/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/workrelated.js"]
 		},
 		{
 			"matches": ["*://codesmith.io/*"], 
-			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/home.js"]
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/workrelated.js"]
 		}],
 	"options_page": "options.html"
 }

@@ -1,19 +1,20 @@
 var rightNow = new Date();
-console.log("hello!");
+var quoteArray = ["Life is like a roller coaster, live it, be happy, enjoy life.", "I like people that enjoy life, 'cause I do the same.", "Simply enjoy life and the great pleasures that come with it.", "Take a step back, evaluate what is important, and enjoy life.", "Positive anything is better than negative nothing.", "Believe that life is worth living and your belief will help create the fact."]
 
-var quoteArray = ["No one ever drowned in sweat.", "I’m a greater believer in luck, and I find the harder I work the more I have of it.", "A dream doesn’t become reality through magic; it takes sweat, determination and hard work.", "Hard work keeps the wrinkles out of the mind and spirit.", "The highest reward for man’s toil is not what he gets for it, but what he becomes by it.", "Hard work helps. It has never killed anyone.", "Pleasure in the job puts perfection in the work.", "Nothing worth having comes easy.", "Hard work beats talent when talent doesn't work hard."]
+console.log(testG);
 
-var randNum = Math.floor(Math.random()*8);
+var randNum = Math.floor(Math.random()*6);
 var randomQuote = quoteArray[randNum];
 
-if(rightNow.getHours() > workStart && rightNow.getHours() < workEnd){
-	console.log("work js has hours as " + workStart +"-" + workEnd);
+if(rightNow.getHours() < workStart || rightNow.getHours() > workEnd){
+	console.log("get back to work");
+	console.log("home js has hours as " + workStart +"-" + workEnd);
 	textReplacer(randomQuote);
-	
-	}
+}
 else {
-
-	console.log("it's not time for working");
+		
+		console.log("workrelated + work hours");
+		console.log("workStart is " + workStart);
 }
 
 
@@ -32,7 +33,7 @@ function textReplacer(newtext){
 	node = body.firstChild;
 	while (node) {
 	  next = node.nextSibling;
-	  //frag.appendChild(node);
+	  frag.appendChild(node);
 	  node = next;
 	}
 	document.body.appendChild(frag);
@@ -58,10 +59,7 @@ function textReplacer(newtext){
 	  }
 	}
 
-
-
 	function handleText(textNode) {
-		
 	  textNode.nodeValue = textNode.nodeValue.replace(/[A-Z][^.]*\./gi, newtext);
 	}
 }

@@ -21,6 +21,8 @@ else{
 	var workEnd = 17;
 }
 
+var testG = "THIS IS A GLOBAL FROM VALUES";
+
 //$(document).ready(function(){
 	var work_start_time;
 	var work_end_time;

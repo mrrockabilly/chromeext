@@ -6,19 +6,18 @@ var randomQuote = quoteArray[randNum];
 
 if(rightNow.getHours() < workStart || rightNow.getHours() > workEnd){
 	console.log("get back to work");
+	console.log("home js has hours as " + workStart +"-" + workEnd);
 	
-	textReplacer(randomQuote);
 }
 else {
+		textReplacer(randomQuote);
 		console.log("home is so great");
-	
+		console.log("workStart is " + workStart);
 }
 var quoteArray = ["Life is like a roller coaster, live it, be happy, enjoy life.", "I like people that enjoy life, 'cause I do the same.", "Simply enjoy life and the great pleasures that come with it.", "Take a step back, evaluate what is important, and enjoy life.", "Positive anything is better than negative nothing.", "Believe that life is worth living and your belief will help create the fact."]
 
 var randNum = Math.floor(Math.random()*6);
 var randomQuote = quoteArray[randNum];
-
-
 
 
 function textReplacer(newtext){

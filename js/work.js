@@ -1,16 +1,17 @@
 var rightNow = new Date();
+console.log("hello!");
 
-var quoteArray = ["No one ever drowned in sweat.", "I’m a greater believer in luck, and I find the harder I work the more I have of it.", "A dream doesn’t become reality through magic; it takes sweat, determination and hard work.", "Hard work keeps the wrinkles out of the mind and spirit.", "The highest reward for man’s toil is not what he gets for it, but what he becomes by it.", "Hard work helps. It has never killed anyone."]
-var randNum = Math.floor(Math.random()*6);
+var quoteArray = ["No one ever drowned in sweat.", "I’m a greater believer in luck, and I find the harder I work the more I have of it.", "A dream doesn’t become reality through magic; it takes sweat, determination and hard work.", "Hard work keeps the wrinkles out of the mind and spirit.", "The highest reward for man’s toil is not what he gets for it, but what he becomes by it.", "Hard work helps. It has never killed anyone.", "Pleasure in the job puts perfection in the work.", "Nothing worth having comes easy.", "Hard work beats talent when talent doesn't work hard."]
+
+var randNum = Math.floor(Math.random()*8);
 var randomQuote = quoteArray[randNum];
 
 if(rightNow.getHours() > workStart && rightNow.getHours() < workEnd){
+	console.log("work js has hours as " + workStart +"-" + workEnd);
 	textReplacer(randomQuote);
 	
 	}
 else {
-
-
 
 	console.log("it's not time for working");
 }

@@ -16,7 +16,11 @@
 			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
 		},
 		{
-			"matches": ["*://instagram.com/*"], 
+			"matches": ["*://www.instagram.com/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
+		},
+		{
+			"matches": ["*://www.tumblr.com/*"], 
 			"js":["js/jquery-3.1.0.min.js","js/values.js", "js/prompt.js", "js/work.js"]
 		},
 		{
@@ -30,6 +34,10 @@
 		{
 			"matches": ["*://developer.mozilla.org/*"], 
 			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/home.js"]
-		}
-
-]}
+		},
+		{
+			"matches": ["*://codesmith.io/*"], 
+			"js":["js/jquery-3.1.0.min.js","js/values.js","js/prompt.js", "js/home.js"]
+		}],
+	"options_page": "options.html"
+}
